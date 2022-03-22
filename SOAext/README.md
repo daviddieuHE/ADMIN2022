@@ -4,7 +4,7 @@
   
 `docker image ls` > get imageID   
   
-`docker run -d imageID` > -d run in background  
+`docker run -d bind9:SOAext` > -d run in background  
   
 `docker exec -u 0 -it mycontainer bash` > run docker in root  
   
