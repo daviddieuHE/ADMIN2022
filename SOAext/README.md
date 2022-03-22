@@ -1,6 +1,6 @@
 `CD` to correct directory  
   
-`docker build -t custom/img:bind9resolver ./`  
+`docker build -t bind9:SOAext ./`  
   
 `docker image ls` > get imageID   
   
