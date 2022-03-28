@@ -23,6 +23,6 @@ smtp        IN      CNAME   mail
 
 
 ;VoIP
-_sip._udp	SRV     0       0       5060        sip 
-_sip._tcp 	SRV     0       0       5060        sip
-sip 		IN	    A	    176.96.231.153
+_sip._udp	SRV     10      100       5060        sip 
+_sip._tcp	SRV     10       100       5060        sip
+sip		IN	    A	    176.96.231.153
