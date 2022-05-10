@@ -27,4 +27,4 @@ COPY ecommerce.db db/
 RUN /usr/bin/sqlite3 /db/ecommerce.db
 
 CMD apachectl -D FOREGROUND
-
+ 
