@@ -1,0 +1,5 @@
+FROM 
+
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY vitrine/ /usr/local/apache2/htdocs/
+COPY b2b /usr/local/apache2/htdocs/
