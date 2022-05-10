@@ -26,4 +26,8 @@ EOF;
    
    echo "Operation done successfully\n";
    $db->close();
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 4ab30e24ecb35fd6cb61969d26bbd794c086f7c2
