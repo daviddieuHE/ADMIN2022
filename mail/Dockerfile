@@ -4,6 +4,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 
-run apt-get install -y nano dnsutils net-tools iputils-ping mailutils
+RUN apt-get install -y nano dnsutils net-tools iputils-ping
 
-run apt-get install postfix -y
+RUN apt-get install postfix -y
+
+#COPY >>> /etc/postfix/main.cf
