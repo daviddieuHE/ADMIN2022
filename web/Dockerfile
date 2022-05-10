@@ -1,7 +1,7 @@
 FROM debian:stretch
 
 RUN apt update
-RUN apt install apache2 libapache2-mod-wsgi python-dev php libapache2-mod-php -y
+RUN apt install apache2 libapache2-mod-wsgi python-dev php libapache2-mod-php sqlite3 libsqlite3-dev php-sqlite3 -y
 RUN a2enmod wsgi
 
 RUN mkdir var/www/html/www
@@ -19,6 +19,11 @@ COPY conf/b2b.conf /etc/apache2/sites-available/b2b.conf
 RUN a2dissite 000-default
 RUN a2ensite b2b.conf
 RUN a2ensite vitrine.conf
-
+ 
 EXPOSE 80 
+
+RUN mkdir /db
+COPY ecommerce.db db/
+RUN /usr/bin/sqlite3 /db/ecommerce.db
+
 CMD apachectl -D FOREGROUND
