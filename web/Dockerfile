@@ -26,4 +26,8 @@ RUN mkdir /db
 COPY ecommerce.db db/
 RUN /usr/bin/sqlite3 /db/ecommerce.db
 
+<<<<<<< HEAD
 CMD apachectl -D FOREGROUND
+=======
+CMD apachectl -D FOREGROUND
+>>>>>>> 4ab30e24ecb35fd6cb61969d26bbd794c086f7c2
