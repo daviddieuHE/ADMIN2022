@@ -1,0 +1,15 @@
+#https://www.postfix.org/BASIC_CONFIGURATION_README.html
+/etc/postfix/main.cf:
+    # Optional: send mail as user@domainname instead of user@hostname.
+    #myorigin = $mydomain
+
+    # Optional: specify NAT/proxy external address.
+    #proxy_interfaces = 1.2.3.4
+
+    # Alternative 1: don't relay mail from other hosts.
+    mynetworks_style = host
+    relay_domains =
+
+    # Alternative 2: relay mail from local clients only.
+    # mynetworks = 192.168.1.0/28
+    # relay_domains =
