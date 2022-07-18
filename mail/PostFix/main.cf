@@ -1,4 +1,9 @@
-#https://www.postfix.org/BASIC_CONFIGURATION_README.html
+# https://www.postfix.org/BASIC_CONFIGURATION_README.html
+# https://www.postfix.org/postconf.5.html 
+
+
+
+
 /etc/postfix/main.cf:
     # Optional: send mail as user@domainname instead of user@hostname.
     #myorigin = $mydomain
